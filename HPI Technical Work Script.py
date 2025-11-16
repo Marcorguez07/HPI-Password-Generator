@@ -38,3 +38,18 @@ pool = ""
 if use_letters: pool += letters
 if use_numbers: pool += numbers
 if use_symbols: pool += symbols 
+
+if not pool:
+    print("Error: No character types selected. Exiting program.")
+    exit()
+
+#### Basic strength calculator
+def strength(password):
+    score = 0
+    if any(c.islower() for c in password): score += 1
+    if any(c.isupper() for c in password): score += 1
+    if any(c.isdigit() for c in password): score += 1
+    if any(c in symbols for c in password): score += 1
+    if len(password) >= 12: score += 1
+    return score 
+
