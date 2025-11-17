@@ -52,4 +52,9 @@ def strength(password):
     if any(c in symbols for c in password): score += 1
     if len(password) >= 12: score += 1
     return score 
+#### Generate and display passwords
+for i in range(count):
+    pwd = "".join(random.choice(pool) for _ in range(length))
+    score = strength(pwd)
+    level = ["Very Weak", "Weak", "Medium", "Strong", "Very Strong"][score - 1]
 
