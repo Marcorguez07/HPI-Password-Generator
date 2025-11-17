@@ -58,3 +58,8 @@ for i in range(count):
     score = strength(pwd)
     level = ["Very Weak", "Weak", "Medium", "Strong", "Very Strong"][score - 1]
 
+
+print(f"\nPassword #{i+1}: {pwd}")
+    print("Strength:", level)
+    print("\nPassword generation complete!")
+    ### End of the code, - bhomik
