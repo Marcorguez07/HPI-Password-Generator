@@ -2,7 +2,7 @@
 import random
 import string
 
-print("Welcome to the improved password generator!\n")
+print("Welcome to the CDsNTs password generator!\n") # note from Danilo: \n means new line.
 
 # Ask how many passwords to generate
 while True:
@@ -61,4 +61,5 @@ for i in range(count):
     print("Strength:", level)
     print("\nPassword generation complete!")
     ### End of the code, - bhomik
+
 
